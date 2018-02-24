@@ -294,24 +294,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\BattleChara.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\BattleManager.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\BattleParam.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\CharaStatus.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyArea.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyController.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyParty.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyUnitBehavior.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyUnitBehavior1.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\FriendParty.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\GameController.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\KindOfEnemyList.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\KindOfFriendList.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\MouseController.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\SceneController.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\SingletonMono.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\UnitStatus.cs" />
-    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\UnitStatus1.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

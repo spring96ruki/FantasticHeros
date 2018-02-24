@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FANTASTIC_HEROS/Scenes/Fuji.unity
+- path: Assets/FANTASTIC_HEROS/Scenes/BattleScene.unity
   isLoaded: 1
   isActive: 1
