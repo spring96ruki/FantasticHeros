@@ -7,15 +7,13 @@ public class MouseController : MonoBehaviour {
 
     public GameObject playerObj;
 
-    [Range(0f, 10f)]float m_time;
-    float m_startTime;
+    [Range(0f, 1f)]float m_time;
     Vector3 m_startMousePos;
     Vector3 m_endMousePos;
     Vector3 m_mouseDinstance;
 
 	// Use this for initialization
 	void Start () {
-        m_startTime = Time.time;
 	}
 	
 	// Update is called once per frame
@@ -28,8 +26,7 @@ public class MouseController : MonoBehaviour {
     public void MovingIsMousePos() {
 
         Vector3 screenPos = Input.mousePosition;
-        float timeStep = m_time > 0f ? (Time.time - m_startTime) / m_time : 1.0f;
-        timeStep = Mathf.Clamp01(timeStep);
+        var DistancePer =  Mathf.Sqrt( Mathf.Pow(m_mouseDinstance.x, 2) + Mathf.Pow(m_mouseDinstance.y, 2))/ 0.1f;
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -44,7 +41,7 @@ public class MouseController : MonoBehaviour {
             m_mouseDinstance = m_endMousePos - m_startMousePos;
         }
 
-        playerObj.transform.position = Vector3.Lerp(m_startMousePos, m_endMousePos, timeStep);
+        
 
         Debug.Log("クリック時の座標：" + m_startMousePos);
         Debug.Log("クリック後の座標：" + m_endMousePos);
