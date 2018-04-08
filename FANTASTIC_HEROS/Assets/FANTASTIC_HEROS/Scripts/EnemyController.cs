@@ -17,13 +17,11 @@ public class EnemyController : SingletonMono<EnemyController> {
 
     float dt;
     float enemySpeed;
-    UnitStatus unitStatus;
 
     // Use this for initialization
     void Start () {
         dt = Time.deltaTime;
-        unitStatus = GetComponent<UnitStatus>();
-        enemySpeed = unitStatus.chara[2].movespeed;
+        enemySpeed = 5f;
 	}
 	
 	// Update is called once per frame

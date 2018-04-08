@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class EnemyArea : MonoBehaviour {
 
+    public bool isBool;
+
+    private void Update()
+    {
+        Debug.Log("isBool : " + isBool);
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision == null) {
-            EnemyController.Instance.StateSet(EnemyState.normal);
-        }
-        if (collision.tag == "player") {
-            EnemyController.Instance.StateSet(EnemyState.warning);
-        }
+        isBool = true;
     }
 }

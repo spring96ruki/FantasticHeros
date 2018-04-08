@@ -297,6 +297,8 @@
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\BattleManager.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyArea.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyList.cs" />
+    <Compile Include="Assets\FANTASTIC_HEROS\Scripts\EnemyStatus.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\MouseController.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\SceneController.cs" />
     <Compile Include="Assets\FANTASTIC_HEROS\Scripts\SingletonMono.cs" />
